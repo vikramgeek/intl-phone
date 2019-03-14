@@ -1805,6 +1805,7 @@ class IntPhonePrefixComponent {
      */
     updatePhone() {
         if (IntPhonePrefixComponent.startsWithPlus(this.phoneInput)) {
+            console.log(this.phoneInput , this.phoneInput.split('+'))
             this.findPrefix(this.phoneInput.split(PLUS)[1]);
         }
         else {
