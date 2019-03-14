@@ -1854,7 +1854,9 @@ class IntPhonePrefixComponent {
      * @return {?}
      */
     updateValue() {
+        console.log(this.phoneInput)
         this.value = this.phoneInput.replace(/ /g, '-');
+        console.log(this.value)
         this.onModelChange(this.value);
         this.onTouch();
     }
